@@ -1,0 +1,28 @@
+* {
+box-sizing: border-box;
+}
+
+.container {
+  border: 4px solid gray;
+  padding: 25px 25px 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  border: 4px solid gray;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.box-wrapper {
+  width: 47.5%;
+  
+}
+
+.box-large {
+border: 4px solid gray;
+width: 47.5%;
+margin-bottom: 24px;
+
+}

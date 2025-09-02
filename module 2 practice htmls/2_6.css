@@ -1,0 +1,62 @@
+div {
+  height: 200px;
+  border: 3px solid rgb(206, 53, 53);
+  font-size: 24px;
+  color: rgb(21, 104, 35);
+}
+
+.red {
+  background-color: red;
+  position: relative;
+  bottom: 10px;
+  right: 10;
+}
+
+@media (max-width 768px) {
+  div {
+    font-size: 20px;
+  }
+}
+
+@media (max-width 576px) {
+  div {
+    font-size: 12px;
+  }
+}
+
+@media (max-width 992px) {
+  div {
+    font-size: 16px;
+  }
+}
+
+div::after {
+  content: " Frontend Simplified";
+}
+
+div::before {
+  content: "Hello ";
+}
+button {
+    animation: float 2000ms 3 alternate-reverse;
+  color: green;
+  transition: 500ms;
+}
+button:hover {
+  color: aquamarine;
+  background-color: blueviolet;
+}
+
+div {
+  transition: background-color 500ms;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
